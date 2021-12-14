@@ -1,0 +1,116 @@
+body{
+    height:100vh;
+    width:100vw;
+    margin:0px;
+    background-color: #bfa378;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.container{
+
+}
+.season_ring{
+    display:flex;
+    flex-wrap:wrap;
+    width:540px;min-height:540px;
+
+}
+.season_ring .spring{
+    position:relative;
+    min-width: 270px;min-height: 270px;
+    background:url("../image/spring.png");
+
+}
+.season_ring .spring:hover{
+    background:url("../image/food_spring.png");
+    transition-duration: 2s;
+}
+.season_ring .summer{
+    min-width: 270px;min-height: 270px;
+    background:url("../image/summer.png");
+}
+.season_ring .summer:hover{
+    background:url("../image/food_summer.png");
+    transition-duration: 2s;
+}
+.season_ring .winter{
+    min-width: 270px;min-height: 270px;
+    background:url("../image/winter.png");
+}
+.season_ring .winter:hover{
+    background:url("../image/food_winter.png");
+    transition-duration: 2s;
+}
+.season_ring .autumn{
+    min-width: 270px;min-height: 270px;
+    background:url("../image/autumn.png");
+}
+.season_ring .autumn:hover{
+    background:url("../image/food_autumn.png");
+    transition-duration: 2s;
+}
+.logo{
+    min-width: 225px;min-height: 225px;
+    position: absolute;
+
+}
+.food{
+    position: fixed;
+}
+.food_time{
+    position:fixed;
+}
+
+.leftdoor{
+    position:absolute;
+    top:0px;left:0px;
+    animation:slidein ease-in 4s;
+    animation-fill-mode:forwards;
+}
+@-webkit-keyframes slidein{
+    from{
+        margin-left:268px;
+        margin-top: 0px;
+    }
+    to{
+        margin-left: -30px;
+        margin-top:0px;
+    }
+}
+.rightdoor{
+    position:absolute;
+    top:0px;left:0px;
+    animation:slidein1 ease-in 4s;
+    animation-fill-mode:forwards;
+}
+@-webkit-keyframes slidein1{
+    from{
+        margin-left:765px;
+        margin-top: 0px;
+    }
+    to{
+        margin-left: 1075px;
+        margin-top:0px;
+    }
+}
+
+@media  screen and (max-width:400px){
+
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .rightdoor{
+        display:none;
+    }
+    .leftdoor{
+        display:none;
+    }
+    .food_time{
+        display:none;
+    }
+    .food{
+        display:none;
+    }
+}
