@@ -106,6 +106,63 @@ body{
     }
 }
 
+@media  screen and (max-width:950px){
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .season_ring{
+        width:330px;min-height:330px;
+    }
+    .season_ring .spring{
+        min-width: 165px;min-height: 165px;
+        background:url("../image/spring\ 1.png");
+      
+    }
+    .season_ring .summer{
+        min-width: 165px;min-height: 165px;
+        background:url("../image/summer\ 1.png");
+    }
+    .season_ring .autumn{
+        min-width: 165px;min-height: 165px;
+        background:url("../image/autumn\ 1.png");
+    }
+    .season_ring .winter{
+        min-width: 165px;min-height: 165px;
+        background:url("../image/winter\ 1.png");
+    }
+    @-webkit-keyframes slidein{
+        from{
+            margin-left:20%;
+            margin-top: 0px;
+        }
+        to{
+            margin-left: -30vh;
+            margin-top:0px;
+            opacity: 0%;
+        }
+    }    
+    @-webkit-keyframes slidein1{
+        from{
+            margin-left:50%;
+            margin-top: 0px;
+        }
+        to{
+            margin-left: 90%;
+            margin-top:0px;
+            opacity: 0%;
+        }
+    }
+    .food_time{
+         display:none;
+    }
+    .food{
+        display:none;
+    }
+    
+}
+
+
 @media  screen and (max-width:400px){
 
     .container{
