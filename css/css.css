@@ -132,6 +132,18 @@ body{
         min-width: 165px;min-height: 165px;
         background:url("../image/winter\ 1.png");
     }
+    .season_ring .spring:hover{
+        background:url("../image/spring\ 1.png");
+    }
+    .season_ring .summer:hover{
+        background:url("../image/summer\ 1.png");
+    }
+    .season_ring .autumn:hover{
+        background:url("../image/autumn\ 1.png");
+    }
+    .season_ring .winter:hover{
+        background:url("../image/winter\ 1.png");
+    }
     @-webkit-keyframes slidein{
         from{
             margin-left:20%;
@@ -183,6 +195,18 @@ body{
     }
     .season_ring .winter{
         min-width: 135px;min-height: 135px;
+        background:url("../image/winter\ 2.png");
+    }
+    .season_ring .spring:hover{
+        background:url("../image/spring\ 2.png");
+    }
+    .season_ring .summer:hover{
+        background:url("../image/summer\ 2.png");
+    }
+    .season_ring .autumn:hover{
+        background:url("../image/autumn\ 2.png");
+    }
+    .season_ring .winter:hover{
         background:url("../image/winter\ 2.png");
     }
     .rightdoor{
