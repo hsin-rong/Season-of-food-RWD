@@ -113,22 +113,23 @@ body{
         justify-content: center;
     }
     .season_ring{
-        width:270px;min-height:270px;
+        width:330px;min-height:330px;
     }
     .season_ring .spring{
-        min-width: 135px;min-height: 135px;
+        min-width: 165px;min-height: 165px;
         background:url("../image/spring\ 1.png");
+      
     }
     .season_ring .summer{
-        min-width: 135px;min-height: 135px;
+        min-width: 165px;min-height: 165px;
         background:url("../image/summer\ 1.png");
     }
     .season_ring .autumn{
-        min-width: 135px;min-height: 135px;
+        min-width: 165px;min-height: 165px;
         background:url("../image/autumn\ 1.png");
     }
     .season_ring .winter{
-        min-width: 135px;min-height: 135px;
+        min-width: 165px;min-height: 165px;
         background:url("../image/winter\ 1.png");
     }
     .rightdoor{
