@@ -8,7 +8,9 @@ body{
     align-items:center;
 }
 .container{
-
+    display: flex;
+    justify-content: space-between;
+    width:100vw;
 }
 .season_ring{
     display:flex;
@@ -51,46 +53,55 @@ body{
     transition-duration: 2s;
 }
 .logo{
-    min-width: 225px;min-height: 225px;
-    position: absolute;
-
+    position: fixed;
+    z-index: 1;
 }
 .food{
-    position: fixed;
+    width:20vw;
+    height:20vw;
 }
 .food_time{
-    position:fixed;
+    width:20vw;
+    height:20vw;
+    margin-bottom: 0%;
+    align-self: flex-end;
 }
 
 .leftdoor{
+    z-index: 2;
     position:absolute;
     top:0px;left:0px;
+    width:30vw;
+    height:100vh;
     animation:slidein ease-in 4s;
     animation-fill-mode:forwards;
 }
 @-webkit-keyframes slidein{
     from{
-        margin-left:268px;
+        margin-left:20%;
         margin-top: 0px;
     }
     to{
-        margin-left: -30px;
+        margin-left: 0vh;
         margin-top:0px;
     }
 }
 .rightdoor{
+    z-index: 2;
     position:absolute;
     top:0px;left:0px;
+    width:30vw;
+    height:100vh;
     animation:slidein1 ease-in 4s;
     animation-fill-mode:forwards;
 }
 @-webkit-keyframes slidein1{
     from{
-        margin-left:765px;
+        margin-left:50%;
         margin-top: 0px;
     }
     to{
-        margin-left: 1075px;
+        margin-left: 70%;
         margin-top:0px;
     }
 }
@@ -100,6 +111,25 @@ body{
     .container{
         display: flex;
         justify-content: center;
+    }
+    .season_ring{
+        width:270px;min-height:270px;
+    }
+    .season_ring .spring{
+        min-width: 135px;min-height: 135px;
+        background:url("../image/spring\ 1.png");
+    }
+    .season_ring .summer{
+        min-width: 135px;min-height: 135px;
+        background:url("../image/summer\ 1.png");
+    }
+    .season_ring .autumn{
+        min-width: 135px;min-height: 135px;
+        background:url("../image/autumn\ 1.png");
+    }
+    .season_ring .winter{
+        min-width: 135px;min-height: 135px;
+        background:url("../image/winter\ 1.png");
     }
     .rightdoor{
         display:none;
