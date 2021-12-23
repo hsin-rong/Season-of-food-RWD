@@ -71,14 +71,14 @@ body{
     z-index: 2;
     position:absolute;
     top:0px;left:0px;
-    width:30vw;
+    width:65vh;
     height:100vh;
     animation:slidein ease-in 4s;
     animation-fill-mode:forwards;
 }
 @-webkit-keyframes slidein{
     from{
-        margin-left:20%;
+        margin-left:22%;
         margin-top: 0px;
     }
     to{
@@ -90,7 +90,7 @@ body{
     z-index: 2;
     position:absolute;
     top:0px;left:0px;
-    width:30vw;
+    width:65vh;
     height:100vh;
     animation:slidein1 ease-in 4s;
     animation-fill-mode:forwards;
@@ -101,36 +101,39 @@ body{
         margin-top: 0px;
     }
     to{
-        margin-left: 70%;
+        margin-left: 69.4%;
         margin-top:0px;
     }
 }
 
 
-@media  screen and (max-width:950px){
+@media  screen and (max-width:768px){
     .container{
+        min-width:100vw;
+        min-height:100vh;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     .season_ring{
-        width:330px;min-height:330px;
+        width:400px;min-height:400px;
     }
     .season_ring .spring{
-        min-width: 165px;min-height: 165px;
-        background:url("../image/spring\ 1.png");
+        min-width: 200px;min-height: 200px;
+        background:url("../image/spring1.png");
       
     }
     .season_ring .summer{
-        min-width: 165px;min-height: 165px;
-        background:url("../image/summer\ 1.png");
+        min-width: 200px;min-height: 200px;
+        background:url("../image/summer1.png");
     }
     .season_ring .autumn{
-        min-width: 165px;min-height: 165px;
-        background:url("../image/autumn\ 1.png");
+        min-width: 200px;min-height: 200px;
+        background:url("../image/autumn1.png");
     }
     .season_ring .winter{
-        min-width: 165px;min-height: 165px;
-        background:url("../image/winter\ 1.png");
+        min-width: 200px;min-height: 200px;
+        background:url("../image/winter1.png");
     }
     .season_ring .spring:hover{
         background:url("../image/spring\ 1.png");
@@ -146,11 +149,11 @@ body{
     }
     @-webkit-keyframes slidein{
         from{
-            margin-left:20%;
+            margin-left:-33vw;
             margin-top: 0px;
         }
         to{
-            margin-left: -30vh;
+            margin-left: -80vw;
             margin-top:0px;
             opacity: 0%;
         }
@@ -176,26 +179,26 @@ body{
 }
 
 
-@media  screen and (max-width:400px){
+@media  screen and (max-width:576px){
     .season_ring{
         width:270px;min-height:270px;
     }
     .season_ring .spring{
         min-width: 135px;min-height: 135px;
-        background:url("../image/spring\ 2.png");
+        background:url("../image/spring2.png");
       
     }
     .season_ring .summer{
         min-width: 135px;min-height: 135px;
-        background:url("../image/summer\ 2.png");
+        background:url("../image/summer2.png");
     }
     .season_ring .autumn{
         min-width: 135px;min-height: 135px;
-        background:url("../image/autumn\ 2.png");
+        background:url("../image/autumn2.png");
     }
     .season_ring .winter{
         min-width: 135px;min-height: 135px;
-        background:url("../image/winter\ 2.png");
+        background:url("../image/winter2.png");
     }
     .season_ring .spring:hover{
         background:url("../image/spring\ 2.png");
@@ -214,5 +217,9 @@ body{
     }
     .leftdoor{
         display:none;
+    }
+    .logo{
+        width:98px;
+        height:98px;
     }
 }
