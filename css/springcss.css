@@ -1,0 +1,365 @@
+body{
+    margin:0px;
+    background-color: #fdb99e;
+    width:100vw;
+}
+.header{
+    position:fixed;
+    width:calc(100vw - 18px);
+    height:90px;
+    background-color:#f06060 ;
+    z-index: 2;
+}
+.main_content{
+    display:flex;
+    justify-content: space-between;
+    width:100vw;
+}
+.logo{
+    position: fixed;
+    margin: 11px calc(50vw - 49px);
+    width:60px;height:60px;
+}
+.sidecontainer{
+    display: flex;
+    flex-direction: column;
+}
+.aside_left{
+    width:7vw;
+    height:95vw;
+}
+.aside_right{
+    width:7vw;
+    height:95vw;
+}
+a{
+    text-decoration:none;
+}
+.contentblock{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+.tagbox_one{
+    width:55vw;
+}
+.tag_one{
+    width: 55vw;
+    object-fit: cover;
+}
+.box_one{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 26px;
+    border-bottom-right-radius: 26px;
+    width: 0vw;
+    height:13vw;
+    opacity:60%;
+    background-color: white;
+    margin-top: -13.5vw;
+    margin-left: 54.5vw;
+}
+.box_one p{
+    color:#f06060;
+    font-size: 40px;
+    opacity: 0%;
+}
+.tagbox_one:hover .box_one{
+    width: 20vw;
+    transition-duration: 2s;
+    margin-left: 34.5vw;
+}
+.tagbox_one:hover .box_one p{
+    opacity: 100%;
+    transition-duration: 3s;
+    transition-timing-function: ease-in;
+}
+
+.tagbox_two{
+    margin-left:15vw;
+    width:55vw;
+    margin-right:0px;
+}
+.tag_two{
+    width: 55vw;
+    object-fit: cover;
+}
+.box_two{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-top-right-radius: 26px;
+    border-bottom-right-radius: 26px;
+    width:0px;
+    height:13vw;
+    opacity:60%;
+    background-color: white;
+    margin-top: -13.5vw;
+    margin-left: 54.8vw;
+}
+.box_two p{
+    color:#f06060 ;
+    font-size: 40px;
+    opacity: 0%;
+}
+.tagbox_two:hover .box_two{
+    width: 20vw;
+    transition-duration: 2s;
+    margin-left: 34.8vw;
+}
+.tagbox_two:hover .box_two p{
+    opacity: 100%;
+    transition-duration: 3s;
+    transition-timing-function: ease-in;
+}
+.tag_three{
+    width: 55vw;
+    object-fit: cover;
+}
+.tagbox_three{
+    width:55vw;
+}
+.box_three{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-top-right-radius: 26px;
+    border-bottom-right-radius: 26px;
+    width:0px;
+    height:13vw;
+    opacity:60%;
+    background-color: white;
+    margin-top: -13.5vw;
+    margin-left: 54.5vw;
+}
+.box_three p{
+    color:#f06060;
+    font-size: 40px;
+    opacity: 0%;
+}
+.tagbox_three:hover .box_three{
+    width: 20vw;
+    transition-duration: 2s;
+    margin-left: 34.5vw;
+}
+.tagbox_three:hover .box_three p{
+    opacity: 100%;
+    transition-duration: 3s;
+    transition-timing-function: ease-in;
+}
+
+.footer{
+    width:calc(100vw - 18px);
+    height:100px;
+    background-color:#f06060  ;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer p{
+    color:white;
+    font-family: DFKai-sb;
+}
+.content{
+    width:70vw;
+    height:90vw;
+    padding-top: 5vw;
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.intro{
+    height:70vw;
+    display: flex;
+    flex-direction:row-reverse;
+}
+.seasontitle{
+    
+    font-size: 10vw;
+    font-family:SeoulHangang;
+    color:#D35E5E;
+}
+.seasoncontent{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 15vw;
+    font-size: 24px;
+    line-height: 7vw;
+    writing-mode: vertical-rl;
+    word-break: keep-all;
+    height: 70vh;
+}
+.ham{
+    position: fixed;
+    margin:11px ;
+}
+.ham img{
+    position: fixed;
+    z-index: 2;
+}
+
+.nav{
+    position: fixed;
+    display:flex;
+    z-index:1;
+    height: 271px;
+    width:150px;
+    background-color: #ffffff;
+    opacity: 0%;
+    margin-top: 28px;
+    margin-left: 28px;
+    border-radius: 5px;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    padding:10px 0px;
+}
+.navbar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:47px;
+}
+.nav p{
+    color:#D35E5E;
+    font-family: SeoulHangang;
+    font-size: 24px;
+    font-weight: bold;
+    margin:0px;
+}
+.navline{
+    background-color: #D35E5E;
+    height:1px;
+    width:110px;
+}
+
+@font-face{
+    font-family:SeoulHangang;
+    src: url(../font/seoulhangang-m/SeoulHangang-Bold.ttf);
+}
+
+
+@media  screen and (max-width:768px){
+    .header{
+        width:100vw;
+    }
+    .footer{
+        width:100vw;
+    }
+    .tag_one{
+        width:70vw;
+
+    }
+    .tag_two{
+        width:70vw;
+
+    }
+    .tag_three{
+        width:70vw;
+    }
+    .tagbox_one{
+        height:17vw;
+        width:70vw;
+    }
+    .tagbox_two{
+        height:17vw;
+        margin-left:0px;
+        width:70vw;
+    }
+    .tagbox_three{
+        height:17vw;
+        width:70vw;
+    }
+    .aside_left{
+        width:8vh;
+        height:100vh;
+    }
+    .aside_right{
+        width:8vh;
+        height:100vh;
+    }
+    .content{
+        padding:25px;
+    }
+    .box_one{
+        display:none;
+    }
+    .box_two{
+        display:none;
+    }
+    .box_three{
+        display:none;
+    }
+    .seasoncontent{
+        height: 80vw;
+        word-break: keep-all;
+    }
+    .intro{
+        height:90vw;
+        padding:15vw 0vw;
+        justify-content: space-around;
+    }
+    .content{
+        margin-top: 20vw;
+    }
+}
+
+@media  screen and (max-width:576px){
+    .header{
+        height:45px;
+    }
+    .logo{
+        margin:2px calc(50vw - 20px);
+        width:40px;
+        height: 40px;
+    }
+    .sidecontainer{
+        width:1px;
+        display:none;
+    }
+    .tag_one{
+        width:80vw;
+        padding:5vw 0px;
+    }
+    .tag_two{
+        width:80vw;
+        padding:5vw 0px;
+    }
+    .tag_three{
+        width:80vw;
+        padding:5vw 0px;
+    }
+    .content{
+        padding:0vw;
+        height:80vh;
+        margin:10vw;
+    }
+    .footer{
+        width: 100vw;
+    }
+    .seasoncontent{
+        height: 180vw;
+        word-break: keep-all;
+    }
+    .intro{
+        display: none;
+        width: 1px;
+    }
+    .block{
+        width:1px;
+    }
+    .ham img{
+        width:37px;
+        height:37px;
+    }
+    .ham{
+        margin:3px 3px;
+    }
+}
+
