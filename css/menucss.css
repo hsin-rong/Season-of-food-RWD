@@ -1,0 +1,44 @@
+body{
+    background-color:#bfa378;
+    margin:0%;
+    display:flex;
+    align-items:flex-end;
+}
+
+
+.intro{
+    padding:20px 50px;
+    margin-top: 60px;
+    margin-left:100px;
+    width:80%;min-height:400px;
+    background-color: burlywood;
+    font-family: DFKai-sb;
+    font-size:18px;
+}
+.topic{
+    font-size: 200%;
+    font-family: DFKai-sb;
+}
+.footer{
+    font-size:16px;
+    line-height:22px;
+    text-align:center;
+    font-family: DFKai-sb;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px;
+    height:78px;
+    background-color: rgb(105, 73, 50);
+    color:white;
+    margin-bottom: 0px;
+}
+.back{
+    max-width:88px;min-height:45px;
+    margin-left: 1125px;
+    margin-top: 100px;
+    background: url(../image/back\ button-introduction.png)
+}
+.back:hover{
+    background: url(../image/back\ button\ -introduction_hover.png)
+}

@@ -1,0 +1,232 @@
+body{
+    background-color: #bfa378;
+    margin:0px;
+}
+.food_time{
+    position: fixed;
+    margin-left:calc(100vw - 286px);
+    margin-top:calc(100vh - 298px);
+    z-index:0;
+}
+.food{
+    position: fixed;
+    z-index:0;
+}
+.season_ring{
+    position:fixed;
+    padding:calc(50vh - 280px) calc(50vw - 280px) ;
+    display:flex;
+    flex-wrap:wrap;
+    width:540px;min-height:540px;
+
+}
+.season_ring .spring{
+    position:relative;
+    min-width: 270px;min-height: 270px;
+    background:url("../image/spring.png");
+}
+.logo{
+    position:fixed;
+    margin:calc(50vh - 110px) calc(50vw - 110px) ;
+    z-index: 1;
+}
+.season_ring .spring:hover{
+    background:url("../image/food_spring.png");
+    transition-duration: 2s;
+}
+.season_ring .summer{
+    min-width: 270px;min-height: 270px;
+    background:url("../image/summer.png");
+}
+.season_ring .summer:hover{
+    background:url("../image/food_summer.png");
+    transition-duration: 2s;
+}
+.season_ring .winter{
+    min-width: 270px;min-height: 270px;
+    background:url("../image/winter.png");
+    z-index: 1;
+}
+.season_ring .winter:hover{
+    background:url("../image/food_winter.png");
+    transition-duration: 2s;
+}
+.season_ring .autumn{
+    min-width: 270px;min-height: 270px;
+    background:url("../image/autumn.png");
+}
+.season_ring .autumn:hover{
+    background:url("../image/food_autumn.png");
+    transition-duration: 2s;
+}
+.leftdoor{
+    position:fixed;
+    width:63vh;height:100vh;
+    z-index: 2;
+    animation:slidein ease-in 4s;
+    animation-fill-mode:forwards;
+}
+@-webkit-keyframes slidein{
+    from{
+        margin-left: calc(50vw - 63vh);
+    }
+    to{
+        margin-left: 0vh;
+    }
+}
+.rightdoor{
+    position:fixed;
+    width:63vh;height:100vh;
+    z-index: 2;
+    animation:slidein1 ease-in 4s;
+    animation-fill-mode:forwards;
+}
+@-webkit-keyframes slidein1{
+    from{
+        margin-left: 50vw;
+    }
+    to{
+        margin-left: calc(100vw - 63vh);
+    }
+}
+
+
+.disleftdoor{
+    animation:disleft ease-in 2s;
+    animation-fill-mode:forwards;
+}
+@-webkit-keyframes disleft{
+    from{
+        margin-left: 0vh;
+    }
+    to{
+        margin-left: -63vh;
+    }
+}
+
+.disrightdoor{
+    animation:disright ease-in 2s;
+    animation-fill-mode:forwards;
+}
+@-webkit-keyframes disright{
+    from{
+        margin-left: calc(100vw - 63vh);
+    }
+    to{
+        margin-left: 100vw;
+    }
+}
+
+.loading{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:hsla(0, 0%, 68%, 0.449); 
+    height:100vh; 
+    width:100vw;
+    position:fixed; 
+    top:0; 
+    z-index:99999;
+    } 
+
+.loading img{
+    
+    animation:circleround ease-in-out 2.5s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+}  
+
+@-webkit-keyframes circleround{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(-360deg);
+    }
+}
+
+@media  screen and (max-width:768px ){
+    .season_ring{
+        padding:calc(50vh - 210px) calc(50vw - 210px) ;
+        width:400px;min-height:400px;
+    }
+    .season_ring .spring{
+        min-width: 200px;min-height: 200px;
+        background:url("../image/spring1.png");
+      
+    }
+    .season_ring .summer{
+        min-width: 200px;min-height: 200px;
+        background:url("../image/summer1.png");
+    }
+    .season_ring .autumn{
+        min-width: 200px;min-height: 200px;
+        background:url("../image/autumn1.png");
+    }
+    .season_ring .winter{
+        min-width: 200px;min-height: 200px;
+        background:url("../image/winter1.png");
+    }
+    @-webkit-keyframes slidein{
+        from{
+            margin-left: calc(50vw - 63vh);
+        }
+        to{
+            margin-left: calc(0vw - 63vh);
+            opacity: 0%;
+        }
+    }
+    @-webkit-keyframes slidein1{
+        from{
+            margin-left: 50vw;
+        }
+        to{
+            margin-left: 100vw;
+            opacity: 0%;
+
+        }
+    }
+
+}
+
+@media  screen and (max-width:576px){ 
+    .food_time{
+        display: none;
+    }
+    .food{
+        display: none;
+    }
+    .leftdoor{
+        display:none;
+    }
+    .rightdoor{
+        display:none;
+    }
+    .season_ring{
+        padding:calc(50vh - 136.5px) calc(50vw - 136.5px) ;
+        width:270px;min-height:270px;
+    }
+    .season_ring .spring{
+        min-width: 135px;min-height: 135px;
+        background:url("../image/spring2.png");
+      
+    }
+    .season_ring .summer{
+        min-width: 135px;min-height: 135px;
+        background:url("../image/summer2.png");
+    }
+    .season_ring .autumn{
+        min-width: 135px;min-height: 135px;
+        background:url("../image/autumn2.png");
+    }
+    .season_ring .winter{
+        min-width: 135px;min-height: 135px;
+        background:url("../image/winter2.png");
+    }
+    .logo{
+        width:98px;
+        height:98px;
+        margin:calc(50vh - 49px) calc(50vw - 49px) ;
+    }
+
+}
