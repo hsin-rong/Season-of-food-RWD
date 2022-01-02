@@ -25,6 +25,12 @@ $(document).ready(function(){
         $(".springyellow").animate({opacity:'1'}, 0);
         $(".springyellow").toggleClass("springyellowhover");
         $(".springpink").animate({opacity:'1'}, 0);
+        $(".summerpink").removeClass("summerpinkhover");
+        $(".summeryellow").removeClass("summeryellowhover");
+        $(".autumnpink").removeClass("autumnpinkhover");
+        $(".autumnyellow").removeClass("autumnyellowhover");
+        $(".winterpink").removeClass("winterpinkhover");
+        $(".winteryellow").removeClass("winteryellowhover");
     }, 
         function(){$(".navhover").removeClass("navhover1");
         $(".navspring").attr('src','./image/springnav.png');
@@ -47,6 +53,12 @@ $(document).ready(function(){
         $(".summeryellow").animate({opacity:'1'}, 0);
         $(".summeryellow").toggleClass("summeryellowhover");
         $(".summerpink").animate({opacity:'1'}, 0);
+        $(".springpink").removeClass("springpinkhover");
+        $(".springyellow").removeClass("springyellowhover");
+        $(".autumnpink").removeClass("autumnpinkhover");
+        $(".autumnyellow").removeClass("autumnyellowhover");
+        $(".winterpink").removeClass("winterpinkhover");
+        $(".winteryellow").removeClass("winteryellowhover");
     }, 
         function(){$(".navhover").removeClass("navhover2");
         $(".navsummer").attr('src','./image/summernav.png');
@@ -69,6 +81,12 @@ $(document).ready(function(){
         $(".autumnyellow").animate({opacity:'1'}, 0);
         $(".autumnyellow").toggleClass("autumnyellowhover");
         $(".autumnpink").animate({opacity:'1'}, 0);
+        $(".springpink").removeClass("springpinkhover");
+        $(".springyellow").removeClass("springyellowhover");
+        $(".summerpink").removeClass("summerpinkhover");
+        $(".summeryellow").removeClass("summeryellowhover");
+        $(".winterpink").removeClass("winterpinkhover");
+        $(".winteryellow").removeClass("winteryellowhover");
     }, 
         function(){$(".navhover").removeClass("navhover3");
         $(".navautumn").attr('src','./image/autumnnav.png');
@@ -92,6 +110,12 @@ $(document).ready(function(){
         $(".winteryellow").animate({opacity:'1'}, 0);
         $(".winteryellow").toggleClass("winteryellowhover");
         $(".winterpink").animate({opacity:'1'}, 0);
+         $(".springpink").removeClass("springpinkhover");
+        $(".springyellow").removeClass("springyellowhover");
+        $(".summerpink").removeClass("summerpinkhover");
+        $(".summeryellow").removeClass("summeryellowhover");
+        $(".autumnpink").removeClass("autumnpinkhover");
+        $(".autumnyellow").removeClass("autumnyellowhover");
     }, 
         function(){$(".navhover").removeClass("navhover4");
         $(".navwinter").attr('src','./image/winternav.png');
@@ -108,7 +132,15 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(".navhome").hover(function(){
         $(".navhover").toggleClass("navhover5");
-        $(".navhome").attr('src','./image/homenavhover.png');}, 
+        $(".navhome").attr('src','./image/homenavhover.png');
+        $(".springpink").removeClass("springpinkhover");
+        $(".springyellow").removeClass("springyellowhover");
+        $(".summerpink").removeClass("summerpinkhover");
+        $(".summeryellow").removeClass("summeryellowhover");
+        $(".autumnpink").removeClass("autumnpinkhover");
+        $(".autumnyellow").removeClass("autumnyellowhover");
+        $(".winterpink").removeClass("winterpinkhover");
+        $(".winteryellow").removeClass("winteryellowhover");}, 
         function(){$(".navhover").removeClass("navhover5");
         $(".navhome").attr('src','./image/homenav.png');})
 });
