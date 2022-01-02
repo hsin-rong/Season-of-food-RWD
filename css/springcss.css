@@ -5,7 +5,7 @@ body{
 }
 .header{
     position:fixed;
-    width:calc(100vw - 18px);
+    width:100vw;
     height:90px;
     background-color:#f06060 ;
     z-index: 2;
