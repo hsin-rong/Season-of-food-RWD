@@ -660,5 +660,12 @@ a{
     .upicon{
         display:none;
     }
+    .nav{
+        margin-top: 16px;
+        margin-left:14px;
+    }
+    .comnav{
+        margin-top: 59px;
+    }
 }
 
